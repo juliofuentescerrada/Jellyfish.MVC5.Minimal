@@ -19,6 +19,9 @@
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new RazorViewEngine());
 
+            RouteTable.Routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            RouteTable.Routes.IgnoreRoute("scripts/{*pathInfo}");
+
             RouteTable.Routes.AppendTrailingSlash = true;
             RouteTable.Routes.LowercaseUrls = true;
             RouteTable.Routes.MapMvcAttributeRoutes();

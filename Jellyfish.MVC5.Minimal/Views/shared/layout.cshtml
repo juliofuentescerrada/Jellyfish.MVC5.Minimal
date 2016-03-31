@@ -1,12 +1,16 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="@Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/styles/vendor/normalize.css" rel="stylesheet" />
+    <link href="~/styles/main.min.css" rel="stylesheet" />
 </head>
 <body>
-<div>
-@RenderBody()    
-</div>
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/scripts/vendor/jquery.min.js"></script>
+    <script src="~/scripts/main.js"></script>
 </body>
 </html>

@@ -102,6 +102,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="global.asax" />
+    <Content Include="gruntfile.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\vendor\jquery.js" />
+    <Content Include="scripts\vendor\jquery.min.js" />
+    <Content Include="styles\main.css" />
+    <Content Include="styles\main.min.css" />
+    <Content Include="styles\vendor\normalize.css" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -124,6 +131,15 @@
     <Content Include="Views\home\index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
     <Content Include="Views\error\error.cshtml" />
+    <None Include=".bin\bower.cmd" />
+    <None Include=".bin\git.cmd" />
+    <None Include=".bin\grunt.cmd" />
+    <None Include=".bin\node.cmd" />
+    <None Include=".bin\npm.cmd" />
+    <Content Include="bower.json" />
+    <Content Include="styles\scss\main.scss" />
+    <Content Include="package.json" />
+    <Content Include="styles\main.css.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -131,7 +147,9 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="styles\scss\partials\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
