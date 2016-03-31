@@ -22,11 +22,20 @@ module.exports = function (grunt) {
                     }
                 ]
             }
+        },
+        uglify: {
+            target : {
+                files : {
+                    'scripts/main.min.js' : ['scripts/main.js']
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('bundle-css', ['sass', 'cssmin']);
+    grunt.registerTask('bundle-js', ['uglify']);
 };

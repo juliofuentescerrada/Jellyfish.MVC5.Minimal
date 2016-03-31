@@ -104,6 +104,7 @@
     <Content Include="global.asax" />
     <Content Include="gruntfile.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\main.min.js" />
     <Content Include="scripts\vendor\jquery.js" />
     <Content Include="scripts\vendor\jquery.min.js" />
     <Content Include="styles\main.css" />
