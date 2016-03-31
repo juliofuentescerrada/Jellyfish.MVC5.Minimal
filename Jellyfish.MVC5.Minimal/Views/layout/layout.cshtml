@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="@Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName">
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/styles/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/styles/main.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        @{Html.RenderPartial("_header");}
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+<footer>
+    @{Html.RenderPartial("_footer");}
+</footer>
+    <script src="~/scripts/vendor/jquery/jquery.min.js"></script>
+    <script src="~/scripts/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="~/scripts/main.js"></script>
+</body>
+</html>

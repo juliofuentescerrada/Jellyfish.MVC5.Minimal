@@ -11,8 +11,12 @@
 
     public class Global : HttpApplication
     {
+        public static string Author { get; set; }
+
         protected void Application_Start(object sender, EventArgs e)
         {
+            Author = "Julio Fuentes Cerrada";
+
             AutofacConfig();
 
             MvcHandler.DisableMvcResponseHeader = true;

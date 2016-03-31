@@ -105,11 +105,18 @@
     <Content Include="gruntfile.js" />
     <Content Include="scripts\main.js" />
     <Content Include="scripts\main.min.js" />
-    <Content Include="scripts\vendor\jquery.js" />
-    <Content Include="scripts\vendor\jquery.min.js" />
+    <Content Include="scripts\vendor\bootstrap\bootstrap.js" />
+    <Content Include="scripts\vendor\bootstrap\bootstrap.min.js" />
+    <Content Include="scripts\vendor\jquery\jquery.js" />
+    <Content Include="scripts\vendor\jquery\jquery.min.js" />
     <Content Include="styles\main.css" />
     <Content Include="styles\main.min.css" />
-    <Content Include="styles\vendor\normalize.css" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="styles\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="styles\vendor\normalize\normalize.css" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -128,7 +135,7 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\shared\layout.cshtml" />
+    <Content Include="Views\layout\layout.cshtml" />
     <Content Include="Views\home\index.cshtml" />
     <Content Include="Views\_viewstart.cshtml" />
     <Content Include="Views\error\error.cshtml" />
@@ -141,6 +148,16 @@
     <Content Include="styles\scss\main.scss" />
     <Content Include="package.json" />
     <Content Include="styles\main.css.map" />
+    <Content Include="Views\shared\_header.cshtml" />
+    <Content Include="Views\shared\_footer.cshtml" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="styles\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="styles\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="styles\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="styles\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="styles\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
