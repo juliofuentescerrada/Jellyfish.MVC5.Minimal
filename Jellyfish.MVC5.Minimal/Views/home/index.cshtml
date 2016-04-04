@@ -1,3 +1,25 @@
-﻿<section class="container">
-    <p>Hey there!</p>    
-</section>
+﻿@for (var i = 1; i <= 4; i++)
+{
+    <article class="panel panel-default">
+        <div class="panel-heading">
+            @Html.ActionLink("Sample blog post", "Post", "Blog", new { year = 2016, month = 3, day = 1, post = "sample-blog-post" }, new { @class = "lead" })
+        </div>
+        <div class="panel-body">
+            Lorem fistrum quietooor va usté muy cargadoo qué dise usteer no te digo trigo por no llamarte Rodrigor papaar papaar jarl no puedor. Diodeno está la cosa muy malar no puedor de la pradera. Va usté muy cargadoo tiene musho peligro ese que llega condemor ese pedazo de sexuarl. La caidita papaar papaar ese pedazo de te va a hasé pupitaa te voy a borrar el cerito diodenoo diodeno a gramenawer al ataquerl torpedo a wan. Jarl diodenoo ese pedazo de ese hombree. Ese hombree a gramenawer condemor pupita ahorarr te va a hasé pupitaa ese hombree tiene musho peligro.
+        </div>
+        <div class="panel-footer">
+            <small><i class="fa fa-calendar"></i> @DateTime.Now.ToShortDateString() | <i class="fa fa-comments"></i> <a href="#">No hay comentarios</a> | Etiquetas: <a href="#" class="label label-primary">ASP.NET</a></small>
+            @*<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>*@
+        </div>
+    </article>
+    if (i != 4)
+    {
+        <hr />
+    }
+}
+<nav>
+    <ul class="pager">
+        <li class="previous"><a href="#"><span>&larr;</span> Más recientes</a></li>
+        <li class="next"><a href="#">Más antiguos<span>&rarr;</span></a></li>
+    </ul>
+</nav>

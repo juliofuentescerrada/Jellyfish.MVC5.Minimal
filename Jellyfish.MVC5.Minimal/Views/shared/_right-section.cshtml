@@ -1,0 +1,74 @@
+﻿<aside class="panel-primary col-xs-12">
+    <div class="panel-heading">
+        Buscar
+    </div>
+    <div class="panel-body">
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</aside>
+
+<aside class="panel-primary col-sm-4 col-md-12">
+    <div class="panel-heading">
+        Posts Recientes
+    </div>
+    <div class="panel-body">
+        <ul class="list-unstyled">
+            @for (var i = 1; i <= 4; i++)
+            {
+                <li>
+                    Sample blog post
+                    <br/>
+                    <small>@DateTime.Now.ToShortDateString()</small>
+                </li>
+            }
+        </ul>
+    </div>
+</aside>
+
+<aside class="panel-primary col-sm-4 col-md-12">
+    <div class="panel-heading">
+        Histórico
+    </div>
+    <div class="panel-body">
+        <ul>
+            @for (var year = DateTime.Now.Year; year == 2016; year--)
+            {
+                for (var month = DateTime.Now.Month; month >= 1; month--)
+                {
+                    var monthName = new DateTime(year, month, 1).ToString("MMMM");
+                    <li><a href="#">@monthName - @year</a></li>
+                }
+            }
+        </ul>
+    </div>
+</aside>
+
+<aside class="panel-primary col-sm-4 col-md-12">
+    <div class="panel-heading">
+        Categorías
+    </div>
+    <div class="panel-body">
+        <ul>
+            <li><a href="#">ASP.NET</a></li>
+        </ul>
+    </div>
+</aside>
+
+<aside class="panel-primary col-sm-4 col-md-12">
+    <div class="panel-heading">
+        Tweets
+    </div>
+    <div class="panel-body">
+        <a class="twitter-timeline"
+           href="https://twitter.com/julio_fuentes"
+           data-chrome="noheader nofooter noborders"
+           data-widget-id="716733632912744448">Tweets por el julio_fuentes.</a>
+    </div>
+</aside>

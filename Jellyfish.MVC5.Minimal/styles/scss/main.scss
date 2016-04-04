@@ -4,15 +4,54 @@
 
 body {
     min-height: 100%;
+    position: relative;
 }
 
-main {    
+header {
+
+    .container {
+        border-bottom: solid 1px black;
+    }
+
+    h1 {
+        text-transform: uppercase;
+    }
 }
 
-footer {    
+main {
+    padding-bottom: 180px;
+
+    article {
+        .article-title {
+        }
+
+        .article-body {
+            text-align: justify;
+        }
+    }
+}
+
+footer {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 180px;
     width: 100%;
+
+    .container {
+        border-top: solid 1px black;
+
+        .fa {
+            min-width: 70px;
+            text-align: center;
+        }
+    }
+}
+
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
